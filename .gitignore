@@ -1,49 +1,58 @@
-# History files
-.Rhistory
-.Rapp.history
+# OSX
+#
+.DS_Store
 
-# Session Data files
-.RData
-.RDataTmp
+# Xcode
+#
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
 
-# User-specific files
-.Ruserdata
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
 
-# Example code in package build process
-*-Ex.R
+# node.js
+#
+node_modules/
+package-lock.json # include if you are using npm - don't use both yarn and npm
+npm-debug.log
+yarn-error.log
+yarn.lock # include if you are using yarn - don't use both npm and yarn
 
-# Output files from R CMD build
-/*.tar.gz
+# BUCK
+buck-out/
+\.buckd/
+*.keystore
 
-# Output files from R CMD check
-/*.Rcheck/
+# Fastlane
+#
+# It is recommended to not store the screenshots in the git repo. Instead, use Fastlane to re-generate the
+# screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/
 
-# RStudio files
-.Rproj.user/
+*/fastlane/report.xml
+*/fastlane/Preview.html
+*/fastlane/screenshots
 
-# produced vignettes
-vignettes/*.html
-vignettes/*.pdf
-
-# OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
-.httr-oauth
-
-# knitr and R markdown default cache directories
-*_cache/
-/cache/
-
-# Temporary files created by R markdown
-*.utf8.md
-*.knit.md
-
-# R Environment Variables
-.Renviron
-
-# pkgdown site
-docs/
-
-# translation temp files
-po/*~
-
-# RStudio Connect folder
-rsconnect/
+# Bundle artifact
+*.jsbundle
